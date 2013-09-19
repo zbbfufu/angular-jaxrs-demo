@@ -1,0 +1,33 @@
+<div ng-controller="accountCtrl">
+	<div>
+		<!-- tableau -->
+		<table>
+			<tr>
+				<th>
+					<span ng-click="sort.field = 'libelle'; sort.order=!sort.order">Nom</span>
+					<input type="text" ng-model="search.libelle" />
+				</th>
+				<th>
+					<span ng-click="sort.field = 'solde'; sort.order=!sort.order">Solde</span>
+					<input type="text" ng-model="search.solde" />
+				</th>
+				<th>
+					<span ng-click="sort.field = 'iban'; sort.order=!sort.order">IBAN</span>
+					<input type="text" ng-model="search.iban" />
+				</th>
+			</tr>
+			<tr ng-repeat="account in accounts | filter:search | orderBy:sort.field:sort.order ">
+				<td>{{ account.libelle }}</td>
+				<td class="right">{{ account.solde | currency }}</td>
+				<td>{{ account.iban }}</td>
+			</tr>
+		</table>
+		<div>
+			Capital total : {{ totalBalance | currency }}
+			<button ng-click="refresh()">Rafra&icirc;chir</button>
+		</div>
+	</div>
+	<div>
+		<!-- formulaire  d'ajout-->
+	</div>
+</div>

@@ -1,0 +1,21 @@
+@CHARSET "ISO-8859-1";
+
+table, th, td {
+	border: 1px solid black;
+	border-spacing: 0;
+	
+}
+th {
+	text-align: left;
+}
+th input {
+	display: block;
+	width: 90%;
+}
+td {
+	padding: 5px;
+}
+
+.right {
+	text-align: right;
+}
