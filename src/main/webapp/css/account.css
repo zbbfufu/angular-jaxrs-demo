@@ -1,21 +1,15 @@
 ﻿@CHARSET "utf-8";
 
 table, th, td {
-	border: 1px solid black;
+	border: 0.1em solid #786E64;
 	border-spacing: 0;
-	
-}
-th {
-	text-align: left;
-}
-th input {
-	display: block;
-	width: 90%;
-}
-td {
-	padding: 5px;
 }
 
-.right {
-	text-align: right;
-}
+th, td { padding: 0.3em; }
+
+th			{ font-weight: bold; color: #FFCD00; background-color: #786E64; }
+th div		{ text-align: left; }
+th input	{ width: 90%; margin-top: 0.5em; }
+
+
+.right { text-align: right; }

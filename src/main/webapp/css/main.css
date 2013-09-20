@@ -5,9 +5,8 @@
 	font-family: Arial, Helvetica, sans-serif;
 }
 
-h1, h2, h3, h4; h5, h6 {
+h1, h2, h3, h4, h5, h6 {
 	font-family: Impact, Charcoal, sans-serif;
-	font-weight: bold;
 	font-stretch: condensed;
 }
 
@@ -19,27 +18,38 @@ h4 { font-size: 1.em;	margin: 1.12em 0 }
 h5 { font-size: .83em;	margin:  1.5em 0 }
 h6 { font-size: .75em;	margin: 1.67em 0 }
 
+
 /* SECTIONS DECLARATIONS */
+
 header {
 	color: #786E64;
 	background-color: #FFCD00;
 	
+	/* grey ligne on bottom of header */
+	border-bottom: 0.15em solid #786E64;
+	
 	min-height: 5em;
-	margin-bottom: 3em;
 	padding: 1em;
 }
 
 #main {
-	padding: 1em;
+	padding: 2em 10em;
 }
 
 footer {
 	color: #FFCD00;
 	background-color: #786E64;
 	
+	/* yellow ligne on top of footer */
+	border-top: 0.5em solid #FFCD00;
+	
 	text-align: right;
 	margin-top: 3em;
-	padding: 1em;
 	
+	position: absolute;
 	bottom: 0;
+	width: 100%;
+}
+footer div {
+	padding: 1em 1em;
 }
