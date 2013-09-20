@@ -1,9 +1,10 @@
 # User prefs #
 /.externalToolBuilders
+/.settings
 
 # Build artifacts #
 /target-ide
-/target-ide
+/target
 *.class
 
 # Package Files #
