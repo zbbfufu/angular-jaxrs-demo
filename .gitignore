@@ -1,6 +1,8 @@
 # User prefs #
 /.externalToolBuilders
 /.settings
+/.classpath
+/.project
 
 # Build artifacts #
 /target-ide
@@ -11,3 +13,4 @@
 *.jar
 *.war
 *.ear
+

@@ -9,13 +9,23 @@
 		<script type="text/javascript" src="js/angular/i18n/angular-locale_fr-fr.js"></script>
 		<script type="text/javascript" src="js/account-app.js"></script>
 		<!-- *********************************************************************-->
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="css/account.css">
 		<!-- *********************************************************************-->
 	</head>
 	<body>
-		<h1>Gestion des comptes</h1>
-		<div ng-app="accountApp">
-			<div ng-include="'views/account-list.view.html'"></div>
+		<header>
+			<h1>Angular.js & JAX-RS demo application</h1>
+		</header>
+		<div id="content">
+			<nav></nav>
+			<div id="main">
+				<div ng-app="accountApp">
+					<div ng-include="'views/account-list.view.html'"></div>
+				</div>
+			</div>
 		</div>
+		<footer>&copy; Julien Furgerot 2013</footer>
 	</body>
 </html>

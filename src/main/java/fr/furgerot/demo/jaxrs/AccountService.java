@@ -15,7 +15,6 @@ public class AccountService {
 	@Path("/list")
 	@Produces("application/json")
 	public List<Account> getAccounts() {
-		System.out.println("Call to account.list");
 		return l;
 	}
 }
