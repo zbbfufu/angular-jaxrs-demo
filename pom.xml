@@ -42,11 +42,6 @@
 	</properties>
 
 	<!-- Environment Settings -->
-	<ciManagement>
-		<system>jenkins</system>
-		<url>https://julienfurgerot.ci.cloudbees.com/job/angular-jaxrs-demo/</url>
-	</ciManagement>
-	
 	<prerequisites>
 		<maven>3.0</maven>
 	</prerequisites>
